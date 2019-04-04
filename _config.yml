@@ -1,0 +1,89 @@
+# Built with Jekyll 3.2.0
+
+# Setup
+title:               TechY's blog
+tagline:             'Always think Tech and Y'
+description:         'Always think Tech and Y'
+url:                 https://hskimim.github.io
+baseurl:
+encoding: utf-8
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _sass
+paginate: 5
+paginate_path: '/contents/page:num'
+permalink: pretty
+version: 1.0.0
+
+# Permalinks
+
+# Color scheme. Options: red, orange, magenta, cyan, blue, brown
+color-scheme:
+
+permalink: pretty
+permalink: /:title/
+
+# Set encoding to UTF-8
+encoding: utf-8
+
+# Collections for texts
+collections:
+  texts:
+    output: true
+
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/'
+  Contents:
+    - '/contents/'
+    - { Categories: '/contents/categories/' }
+  About:
+    - '/about/'
+
+# About/contact
+author:
+  name: hskimim
+  description: <strong>Hyunsik</strong>
+  gravatar: d4b9cf00055a96ef0590570eb3db0f0f
+  contact:
+    #linkedin:  <hide>
+    github:    https://github.com/hskimim
+    facebook:  https://www.facebook.com/hyunsik.kim.1800
+    #twitter:  <hide>
+    #weibo:    <hide>
+    email:     mailto:hskimim@gmail.com
+
+# Markdown specs
+markdown: kramdown
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Exclusions from the final site
+exclude:
+  - optional
+  - vendor
+
+# Theme
+theme: "ed."
+
+
+# Plugins
+mathjax: true
+google_analytics_token: 'UA-137675817-1'
+disqus_short_name: 'hyunsik kim'

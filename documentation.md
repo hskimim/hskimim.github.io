@@ -23,7 +23,7 @@ hello
 ---
 
 thank you
-2018. copyright [reniew](https://github.com/hskimim)  
+2018. copyright [hskimim](https://github.com/hskimim)  
 
 **contact**
 > github : https://github.com/hskimim

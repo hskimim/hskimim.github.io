@@ -5,9 +5,9 @@ categories: [Deep_Learning]
 tags: [Deep_Learning,HS]
 ---
 
-조경현 교수님이 쓰신 Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation [논문]("https://www.aclweb.org/anthology/D14-1179")에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.
+조경현 교수님이 쓰신 Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation [논문](https://www.aclweb.org/anthology/D14-1179)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.
 
-구현 코드는 [깃헙]("https://github.com/hskimim/Natural_language_Processing_self_study/tree/master/RNN_Seq2Seq") 사이트를 참고해주시면 감사하겠습니다.
+구현 코드는 [깃헙](https://github.com/hskimim/Natural_language_Processing_self_study/tree/master/RNN_Seq2Seq) 사이트를 참고해주시면 감사하겠습니다.
 
 ## Abstract
 
@@ -73,7 +73,7 @@ $$h_{t} = f(h_{t-1},y_{t-1},c)$$
 
 <img src = "/images/post_img/markdown-img-paste-20190405171103264.png">
 
-제 새로운 hidden unit $h_{t}$를 업데이트해주어야겠죠. 우변의 앞의 부분부터 보면, 이전 시점의 hidden unit에 update gate를 곱해주면서, ``이전 시점을 얼마나 받아드릴 지에 대한 값``이 됩니다. 뒤에 부분은, 받아드리는 만큼의 나머지 부분을 현재 시점의 정보로 채운다의 개념으로써, $z_j$의 정도에 따라서, 얼마나 잊고 얼마나 변해갈지를 정하는 파라미터가 되겠습니다. 보다 명쾌하고 쉬운 설명은 [ratsgo]("https://ratsgo.github.io/deep%20learning/2017/05/13/GRU/")님의 블로그를 추천드립니다.
+제 새로운 hidden unit $h_{t}$를 업데이트해주어야겠죠. 우변의 앞의 부분부터 보면, 이전 시점의 hidden unit에 update gate를 곱해주면서, ``이전 시점을 얼마나 받아드릴 지에 대한 값``이 됩니다. 뒤에 부분은, 받아드리는 만큼의 나머지 부분을 현재 시점의 정보로 채운다의 개념으로써, $z_j$의 정도에 따라서, 얼마나 잊고 얼마나 변해갈지를 정하는 파라미터가 되겠습니다. 보다 명쾌하고 쉬운 설명은 [ratsgo](https://ratsgo.github.io/deep%20learning/2017/05/13/GRU/)님의 블로그를 추천드립니다.
 
 (다시 논문으로 돌아가서)
 
@@ -109,7 +109,7 @@ WMT'14 workshop의 English French 번역 문제에 해당 모델을 사용하고
 
 - Embedding dimension 을 100으로 주었다.
 - Activation function 을 hyperbolic tangent function을 사용했다.(위의 GRU 공식을 사용했다고 생각하면 됩니다.)
-- decoder의 hidden 에서 output으로 가는 layer는 single layer였으며 500 maxout layer를 적용해주었다.([maxout]("https://stats.stackexchange.com/questions/129698/what-is-maxout-in-neural-network")에 대한 보다 자세한 설명 자료입니다.)
+- decoder의 hidden 에서 output으로 가는 layer는 single layer였으며 500 maxout layer를 적용해주었다.([maxout](https://stats.stackexchange.com/questions/129698/what-is-maxout-in-neural-network)에 대한 보다 자세한 설명 자료입니다.)
 - 모델의 모든 가중치는 평균이 0, 표준편차가 0.01으로 고정된 가우시안 정규 분포를 따르게 초기화되었다.
 - 모델 학습에는 Adadelta optimizer를 사용하였고, stochastic gradient descent 를 사용하였다.
 - 배치(batch)의 크기는 64였다.

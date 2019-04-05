@@ -29,11 +29,11 @@ RNN Encoder-Decoder 모델을 제안하며, 추가적으로 더 훌륭한(sophis
 $h_{t} = f(h_{t-1},x_{t})$
 - 매시점 $t$ 마다 hidden state $h_{t}$는 이전 시점 t-1 의 hidden state와 동일 시점의 sequence source data $x_{t}$ 를 non-linear function 을 적용한 것으로 update된다. 여기서 non-linear function $f$는 logistic 과 같은 단순한 형태에서 LSTM 과 같은 구조로 유연하게 설정될 수 있다.
 
-- RNN 은 해당 sequence 의 확률 분포를 다음 스텝의 sequence 를 예측하기 위해 학습된다. 이 경우, $output_{t}$ 는 softmax function 을 적용하면 조건부 분포(conditional probability)이자 다항 분포(multinomial distribution)인 $p(x_{t}|x_{t-1},...,x_{1})$ 을 따른다.
+- RNN 은 해당 sequence 의 확률 분포를 다음 스텝의 sequence 를 예측하기 위해 학습된다. 이 경우, $output_{t}$ 는 softmax function 을 적용하면 조건부 분포(conditional probability)이자 다항 분포(multinomial distribution)인 $$p(x_{t}|x_{t-1},...,x_{1})$$ 을 따른다.
 
 **2. RNN  Encoder - Decoder**
 
-encoder 는 다양한 길이의 시퀀스(variable-length sequence)데이터를  고정 길이의 벡터 표현으로 인코딩한다. decoder는 고정 길이의 벡터 표현을 다시 다양한 길이의 시퀀스로 돌려놓는다. 확률론적 관점으로는 $p(y_{1},..,y_{T'}|x_{1},...,x_{T})$ 가 되며, $T'$과 $T$ 는 다를 수 있다.
+encoder 는 다양한 길이의 시퀀스(variable-length sequence)데이터를  고정 길이의 벡터 표현으로 인코딩한다. decoder는 고정 길이의 벡터 표현을 다시 다양한 길이의 시퀀스로 돌려놓는다. 확률론적 관점으로는 $$p(y_{1},..,y_{T'}|x_{1},...,x_{T})$$ 가 되며, $T'$과 $T$ 는 다를 수 있다.
 
 RNN 의 encoder는 sequence X를 순차적으로 하나씩 읽어드린다. 이를 통해 위에서 언급한 $h_t$ 에 대한 식이 적용되며 값이 업데이트된다. 다 읽어드린 후에는 RNN의 hidden state는 전체 input sequence 의 요약 벡터 **c** 가 된다. RNN 의 decoder는 $h_{t}$
 를 통해 $y_{t}$를 예측 및 생성(generate) 하는 단계이다.
@@ -79,11 +79,11 @@ update gate의 경우, 이전의 hiddens state의 정보가 현재의 hidden sta
 
 흔히 사용되는 통계적 기법의 기계 번역(SMT라 불립니다.)의 목표는(구체적으로 말하면 해당 아키텍처에서는 Decoder) source sentence $e$ 가 주어졌을 때,(우리의 예시에서는 English phrase) 아래의 최대화하는 번역본 $f$ 을 찾는 것이다.
 
-\begin{align} p \left( \mathbf{f} \; | \; \mathbf{e} \right) \propto p \left( \mathbf{e} \; | \; \mathbf{f} \right) p \left( \mathbf{f} \right) \end{align}
+![](assets/markdown-img-paste-20190405201524609.png)
 
 위의 식의 우변에서 첫 번째 부분은 translation model이라고 불리고 두 번째 부분은 language model이라고 불린다. 실질적으로 대부분의 SMT는 좌변에 log를 씌운 형태와 그에 맞는 우변을 설정하게 된다.
 
-\begin{align} \log p \left( \mathbf{f} \; | \; \mathbf{e} \right) = \sum_{n=1}^N w_n f_n \left( \mathbf{f}, \mathbf{e} \right) + \log Z \left( \mathbf{e} \right) \end{align}
+![](assets/markdown-img-paste-20190405201544270.png)
 
 위의 식에서 $f_{n}$은 n 번째 feature를 의미하고, $w_{n}$은 n 번째 weight를 의미하며, 얼마나 잘 번역이 되었냐의 기준이 되는 BLEU 점수에 따라 최적화된다. 이전의 translation문제에서 neural net방식은 번역 가설에 대해 다시 점수를 책정하는 데에 사용되었지만, 최근에는 번역 작업 자체에 대한 문제에 접근하고 있다.
 

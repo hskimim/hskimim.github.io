@@ -1,7 +1,7 @@
 ---
 title: "Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation"
 date: 2019-04-04 08:26:28 -0400
-categories: [Deep_Learning]
+categories: [NLP]
 tags: [NLP,HS]
 ---
 

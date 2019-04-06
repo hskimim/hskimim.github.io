@@ -58,7 +58,7 @@ $$y = w * (z * r) + b$$
 
 위의 식에서 보면, $z$에 $r$이라는 새로운 term이 추가되었는데, 이 요소가 이항분포의 확률값이 되고, 이에 따라서, 벡터의 요소가 확률 변수에 따라, 마스킹되는 것이다.
 
-가중치 벡터($w$)에 $l_{2}$ norm 을 적용하므로써 다시 스케일링을 해주는 것은, $||w||$ > $s$(norm_2)의 경우, w의 norm_2 즉, euclidean distance 를 $s$로 재조정해줌으로써, overfitting을 막는 것이다.
+가중치 벡터 $w$ 에 $l_{2}$ norm 을 적용하므로써 다시 스케일링을 해주는 것은, $$w_{norm_2} > s$$의 경우, w의 norm_2 즉, euclidean distance 를 $s$ 로 재조정해줌으로써, overfitting을 막는 것이다.
 
 ## Datasets and Experiemntal Setup
 

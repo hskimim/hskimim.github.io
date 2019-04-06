@@ -2,7 +2,7 @@
 title: "Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation"
 date: 2019-04-04 08:26:28 -0400
 categories: [Deep_Learning]
-tags: [Deep_Learning,HS]
+tags: [NLP,HS]
 ---
 
 조경현 교수님이 쓰신 Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation [논문](https://www.aclweb.org/anthology/D14-1179)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.

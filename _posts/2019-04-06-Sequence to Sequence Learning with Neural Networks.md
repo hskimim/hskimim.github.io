@@ -28,7 +28,7 @@ LSTM에 더해서, 우리는 장거리 의존성 문제를 해결하기 위해�
 위의 이미지에서 보이는 바와 같이, Encoder Decoder를 적용하였고, 각각의 아키텍처는 LSTM을 사용하였다. LSTM으 미고표는 조건부 확률
 $$p(y_{1},...,y_{T'}|x_{1},...,x_{T})$$ 을 예측하려는 것이다. 또한, source sentence, target sentence 각각 문장의 끝에 End of Sentence 를 의미하는 <EOS> 토큰이 있는 것을 확인할 수 있다. 이는 모델이 문장의 길이를 파악하고, 이에 따른 분포를 정의하게 해주기 위함이다. (이미지 처리에서 이미지의 모서리 부분에 <PAD> 토큰을 처리해줌으로써, 이미지의 크기와 모서리를 정의하는 것과 같은 맥락입니다.)
 
-또한, 위에서 언급했던 것과 마찬가지로, 4개의 층을 가지는 deep 한 LSTM 아키텍처를 사용하였다. 마지막으로는 input sentence 즉, source sentence의 순서를 역순으로 배치하였다. 예로 들어서, 기존에 $a,b,c,<eos>$ 였다면 $c,b,a,<eos>$가 되는 것이다.
+또한, 위에서 언급했던 것과 마찬가지로, 4개의 층을 가지는 deep 한 LSTM 아키텍처를 사용하였다. 마지막으로는 input sentence 즉, source sentence의 순서를 역순으로 배치하였다. 예로 들어서, 기존에 $a,b,c,eos$ 였다면 $c,b,a,eos$가 되는 것이다.
 
 **Decoding and Rescoring**
 
@@ -41,7 +41,7 @@ $$p(y_{1},...,y_{T'}|x_{1},...,x_{T})$$ 을 예측하려는 것이다. 또한, s
 
 처음에는, source sentence의 순서를 거꾸로 넣어준다는 것이, 예측하는 새로운 문장의 처음에는 잘 맞아떨어지지만, 뒤쪽 문장 형성에는 문제가 생길 것이라고 생각했다. 하지만 LSTM 모델은 전체적으로 더 나은 성능을 보여주었다.
 
-<img src = "images/post_img/markdown-img-paste-20190407175609130.png">
+<img src = "/images/post_img/markdown-img-paste-20190407175609130.png">
 
 **Training details**
 
@@ -56,7 +56,7 @@ $$p(y_{1},...,y_{T'}|x_{1},...,x_{T})$$ 을 예측하려는 것이다. 또한, s
 
 해당 모델은 source sentence를 고정된 벡터차원으로 변환하기 때문에, 단어 표상을 학습할 수 있다.
 
-<img src = 'images/post_img/markdown-img-paste-20190407175957982.png'>
+<img src = '/images/post_img/markdown-img-paste-20190407175957982.png'>
 
 
 ## Conclusion

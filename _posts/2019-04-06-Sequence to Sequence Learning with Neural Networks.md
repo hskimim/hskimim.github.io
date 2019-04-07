@@ -7,7 +7,7 @@ tags: [NLP,HS]
 
 조경현 교수님의 RNN Seq2Seq 논문에 이어 구글에서 나온 논문 Sequence to Sequence Learning with Neural Networks [논문](https://arxiv.org/abs/1409.3215)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.
 
-구현 코드는 [깃헙](https://github.com/hskimim/Natural_language_Processing_self_study/blob/master/RNN_Seq2Seq) 사이트를 참고해주시면 감사하겠습니다.
+구현 코드는 [깃헙](https://github.com/hskimim/Natural_language_Processing_self_study/tree/master/RNN_for_Seq2Seq) 사이트를 참고해주시면 감사하겠습니다.
 
 ## Abstract
 

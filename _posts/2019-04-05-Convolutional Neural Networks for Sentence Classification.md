@@ -7,7 +7,7 @@ tags: [NLP,HS]
 
 김윤 교수님이 쓰신 Convolutional Neural Networks for Sentence Classification [논문](https://www.aclweb.org/anthology/D14-1181.pdf)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.
 
-구현 코드는 [깃헙](https://github.com/hskimim/Natural_language_Processing_self_study/blob/master/CNN/) 사이트를 참고해주시면 감사하겠습니다
+구현 코드는 [깃헙](https://github.com/hskimim/Natural_language_Processing_self_study/tree/master/CNN_for_classification) 사이트를 참고해주시면 감사하겠습니다
 
 ## Abstract
 

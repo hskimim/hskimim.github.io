@@ -106,7 +106,7 @@ E/P is a catch-all proxy for unnamed factors in R of Ball(1978)
 
 ### Stocks Sorted on ME then Pre-Ranking beta
 
-<img src="table_1.jpg">
+<img src="/images/post_img/table_1.jpg">
 
 ##### 위의 표를 보고 베타에 대해 알 수 있는 2 가지 사실
 - 각 사이즈 분위 안에서 post-ranking 베타는 pre-ranking 베타의 순서를 매우 유사하게 재현한다.
@@ -122,8 +122,8 @@ E/P is a catch-all proxy for unnamed factors in R of Ball(1978)
 
 ### Properties of Portfolios Formed on Size or Pre-Ranking betas
 
-<img src="table2_1.jpg">
-<img src="table2_2.jpg">
+<img src="/images/post_img/table2_1.jpg">
+<img src="/images/post_img/table2_2.jpg">
 
 표를 보게 되면, 평균수익률과 사이즈는 역상관성, 베타는 상관성을 띄는 것으로 보인다. 즉, 사이즈 포트폴리오는 SLB 모델을 지지한다.
 
@@ -144,7 +144,7 @@ E/P is a catch-all proxy for unnamed factors in R of Ball(1978)
 
 ### Average Slopes from Month-by-Month Regressions of Stock Return on betas
 
-<img src="table3.jpg">
+<img src="/images/post_img/table3.jpg">
 
 #### Can beta Be Saved?
 - other explanatory variables are correlated with true betas
@@ -164,8 +164,8 @@ E/P is a catch-all proxy for unnamed factors in R of Ball(1978)
 average returns for July 1963 to December 1990 for portfolios formed on ranked values of BE/ME or E/P.(one-dimensional yearly sorts)
 
 ### Properties of Portfolios Formed on BE/ME and E/P
-<img src="table4_1.jpg">
-<img src="table4_2.jpg">
+<img src="/images/post_img/table4_1.jpg">
+<img src="/images/post_img/table4_2.jpg">
 
 - 평균수익률(R)과 E/P 의 관계는 U자형이다.
 - 평균수익률(R)과 BE/ME 의 관계는 정상관성을 띈다. 스프레드의 크기가 사이즈 포트폴리오의 2배에 달한다.
@@ -208,7 +208,7 @@ average returns for July 1963 to December 1990 for portfolios formed on ranked v
 --------------------------------------------------------------------
 ### Average Monthly Returns on Portfolios Formed on Size and BE/ME
 
-<img src="table5.jpg">
+<img src="/images/post_img/table5.jpg">
 
 - 사이즈를 통제하면 BM/ME 가 평균 수익률의 강한 변동을 포착하게 되고,BM/ME 를 통제하면, 수익률에 사이즈 효과가 남는다.
 
@@ -232,7 +232,7 @@ average returns for July 1963 to December 1990 for portfolios formed on ranked v
 
 ### A. Average Returns , Size and BE/ME
 
-<img src="table5.jpg">
+<img src="/images/post_img/table5.jpg">
 
 - 사이즈를 통제한 BE/ME 는 평균 수익률에 대한 강한 변동성을 보인다.(not-flat)
 - BE/ME를 통제한 사이즈도 평균 수익률과 negative relation을 보인다.
@@ -249,7 +249,7 @@ average returns for July 1963 to December 1990 for portfolios formed on ranked v
 
 #### `Subperiod` Average Monthly Returns on the NYSE Equal-Weignted and Value-weighted portfolios and `Subperiod` means of the intercepts and slops from the Monthly FM cross-sectional regressions of Returns
 
-<img src='table_6_1.jpg'>
+<img src='/images/post_img/table_6_1.jpg'>
 
 - in FM regressions, the intercepts means :
   - explanatory variable = 0

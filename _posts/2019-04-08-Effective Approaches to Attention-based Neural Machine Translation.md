@@ -82,16 +82,6 @@ global approach는 source sentence의 모든 스텝에 어탠션 메커니즘을
 ## Input-feeding approach
 
 <img src = "/images/post_img/markdown-img-paste-20190409090301146.png">
-In our proposed global and local approaches,
-the attentional decisions are made independently,
-which is suboptimal. Whereas, in standard MT,
-a coverage set is often maintained during the
-translation process to keep track of which source
-words have been translated. Likewise, in attentional NMTs, alignment decisions should be made
-jointly taking into account past alignment information. To address that, we propose an inputfeeding approach in which attentional vectors h˜t
-are concatenated with inputs at the next time steps
-as illustrated in Figure 4.11 The effects of having such connections are two-fold: (a) we hope
-to make the model fully aware of previous alignment choices and (b) we create a very deep network spanning both horizontally and vertically.
 
 우리들의 approach에서, 어탠션 메카니즘은 독립적으로 만들어진다. 반면에 일반적인 기계 번역에서는 어떤 source words가 번역이 되었는지를 지속적으로 체크하면서 적용범위가 유지된다. 즉, 이전 스테이트의 정보가 새로운 alignment model에 적용되어야 한다는 것이다. $e_{ij}=a(s_{i-1}, h_j)$와 같이 말이다. 이런 부분을 고려해주기 위해서, 우리는 input-feeding approach를 적용해준다. 해당 접근법은 $x_{t+1}$라는 다음 시점의 input과 ${ \widetilde { h } }_{ t }$를 (여기서 ${ \widetilde { h } }_{ t }$는 이전 스테이트의 독립적으로 만들어진 attention model이다.)concat해서 넣어준다. 이를 통해서, 이전 스텝의 alignment model의 정보를 concat을 통해 삽입할 수 있고, 수평,수직적으로 보다 깊은 뉴럴 네트워크를 쌓을 수 있게 된다.
 

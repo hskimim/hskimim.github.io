@@ -1,6 +1,6 @@
 ---
-title: "Effective Approaches to Attention-based Neural Machine Translation"
-date: 2019-04-08 08:26:28 -0400
+title: "Hierarchical Attention Networks for Document Classification"
+date: 2019-04-13 08:26:28 -0400
 categories: [NLP]
 tags: [NLP,HS]
 ---

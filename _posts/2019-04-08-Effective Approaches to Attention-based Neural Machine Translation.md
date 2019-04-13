@@ -87,7 +87,7 @@ global approach는 source sentence의 모든 스텝에 어탠션 메커니즘을
 
 ## Training Details
 
-- 문장의 길이가 토큰의 갯수가 50이 넘는 것들로 필터링하였다.
+- 문장의 길이가 토큰의 갯수가 50이 넘지 않는 것들로 필터링하였다.
 - 4 레이어 LSTM을 사용하였다.
 - hidden state의 차원 : 1000
 - embedding vector의 차원 : 1000

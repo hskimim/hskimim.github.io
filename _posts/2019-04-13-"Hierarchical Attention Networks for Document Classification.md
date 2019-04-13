@@ -7,7 +7,7 @@ tags: [NLP,HS]
 
 Attention Mechanism을 공부하면서 Sequence to Sequence 뿐만 아니라 분류에도 접목되는 부분이 있을까 알아보다가, 어탠션 메커니즘을 적용해 분류를 진행한 논문 Hierarchical Attention Networks for Document Classification [논문](http://www.cs.cmu.edu/~./hovy/papers/16HLT-hierarchical-attention-networks.pdf)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.
 
-구현 코드는 [깃헙](https://github.com/hskimim/Natural_language_Processing_self_study/tree/master/Attention_for_Seq2Seq) 사이트를 참고해주시면 감사하겠습니다.
+구현 코드는 [깃헙](https://github.com/hskimim/Natural_language_Processing_self_study/tree/master/Attention_for_classification) 사이트를 참고해주시면 감사하겠습니다.
 
 ## Abstract
 

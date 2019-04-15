@@ -74,4 +74,4 @@ $$y^{k} = max_{i}f^{k}[i]$$
 
 ## Results
 
-<img src = "images/post_img/markdown-img-paste-20190415220127188.png">
+<img src = "/images/post_img/markdown-img-paste-20190415220127188.png">

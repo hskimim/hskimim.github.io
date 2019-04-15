@@ -30,15 +30,18 @@ NLM(인공신경망 언어 모델)이 빈도수 기반의 n-gram을 능가하는
 LSTM 을 사용한다는 내용입니다.
 
 - **Recurrent Neural Network Language Model**
+
 $V$를 단어의 어휘에 대한 고정된 크기라고 하자. 언어 모델은 $t+1$시점의 단어 $w_{t+1}$에 대한 분포를 형성한다. (이 때, 분포의 집단의 $V$에 포함됩니다. 즉, softmax 값의 분모(denominator) 부분의 사이즈를 정하게 됩니다.)
 
 <img src = "/images/post_img/markdown-img-paste-20190415212400276.png">
 
-$p^{j}$ 은 $P ∈ R^{m*|V|}$의 $j$번째 컬럼이다.($j$번째 output이라고 해도 맞다.) 우리의 모델은 기존의 NLM 모델에서 사용하는 임베딩 벡터 $X ∈ R^{n*|V|}$을 softmax 를 취한 hidden state으로 인풋을 사용하게 된다. 우리는 이러한 인풋을 기반으로 Negative log likelihood를 최소화하는 방향으로 모델을 학습시킨다.
+$p^{j}$ 은 $P ∈ R^{m*|V|}$의 $j$번째 컬럼이다.($j$번째 output이라고 해도 맞다.)
+
+우리의 모델은 기존의 NLM 모델에서 사용하는 임베딩 벡터 $X ∈ R^{n*|V|}$을 softmax 를 취한 hidden state으로 인풋을 사용하게 된다. 우리는 이러한 인풋을 기반으로 Negative log likelihood를 최소화하는 방향으로 모델을 학습시킨다.
 
 - **Character-level Convolutional Neural Network**
-해당 섹션은 단어가 CNN에 통과하는 과정을 설명(describe)합니다.
 
+해당 섹션은 단어가 CNN에 통과하는 과정을 설명(describe)합니다.
 $C$를 문자의 어휘 셋이라고 하자. $d$는 문자의 임베딩 차원이라고 하면, $Q ∈ R^{d*|C|}$의 $Q$는 단어의 임베딩 행렬이 된다. 따라서, 단어(word)가 $l$의 길이를 지녔다고 하면, $[c_{1},c_{2},c_{3},..,c_{l}]$가 된다.
 
 아래의 식은, filter 사이즈가(width라고 표현합니다.) $w$라고 했을 때, stride를 $w-1$으로 했을 때, CNN을 거치고 나온 벡터의 차원이다.

@@ -33,9 +33,13 @@ LSTM 을 사용한다는 내용입니다.
 
 $V$를 단어의 어휘에 대한 고정된 크기라고 하자. 언어 모델은 $t+1$시점의 단어 $w_{t+1}$에 대한 분포를 형성한다. (이 때, 분포의 집단의 $V$에 포함됩니다. 즉, softmax 값의 분모(denominator) 부분의 사이즈를 정하게 됩니다.)
 
-$$P ∈ R^{m*|V|}$$ $p^{j}$ 은 $j$번째 컬럼이다.($j$번째 output이라고 해도 맞다.)
+$$P ∈ R^{m*|V|}$$
 
-우리의 모델은 기존의 NLM 모델에서 사용하는 임베딩 벡터 $$X ∈ R^{n*|V|}$$ 을 softmax 를 취한 hidden state으로 인풋을 사용하게 된다. 우리는 이러한 인풋을 기반으로 Negative log likelihood를 최소화하는 방향으로 모델을 학습시킨다.
+위의 수식은 은 CharCNN 을 통과한 후에, character level이 word level 로 매핑된 후의 output입니다.
+
+$$X ∈ R^{n*|V|}$$
+
+우리의 모델은 기존의 NLM 모델에서 사용하는 임베딩 벡터(위의 수식)를 softmax 를 취한 hidden state으로 인풋을 사용하게 된다. 우리는 이러한 인풋을 기반으로 Negative log likelihood를 최소화하는 방향으로 모델을 학습시킨다.
 
 <img src = "/images/post_img/markdown-img-paste-20190415212400276.png">
 

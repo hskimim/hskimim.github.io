@@ -7,7 +7,7 @@ tags: [NLP,HS]
 
 Convolutional Neural Network for sentence classification 에 이은 Yoon Kim 님의 2015년도 논문, "Character-Aware Neural Language Models" [논문](https://arxiv.org/pdf/1508.06615.pdf)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.
 
-구현 코드 업로드는 최대한 빨리 진행하도록 하겠습니다!
+구현 코드는 [깃헙](https://github.com/hskimim/Natural_language_Processing_self_study/tree/master/Char_CNN_for_Language_Modeling) 사이트를 참고해주시면 감사하겠습니다.
 
 ## Abstract
 

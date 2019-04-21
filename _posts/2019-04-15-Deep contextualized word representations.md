@@ -37,16 +37,19 @@ ELMo는 biLM에 있는 중간 레이어의 표상들을(intermediate layer repre
 
 위의 그림에서 $t_{k}$는 각각의 토큰을 의미하고, $j=1,...,L$은 레이어를 의미합니다.
 
-ELMo의 가장 간단한 경우에는 히든 레이어의 가장 상위 층만 사용하지만, 좀 더 일반적으로는, 우리는 모든 biLM 레이어의 값들을 고려해준다.
+ELMo의 가장 간단한 경우에는 히든 레이어의 가장 상위 층만 사용하지만, 좀 더 일반적으로, 우리는 모든 biLM 레이어의 값들을 고려해준다.
 
 <img src = "/images/post_img/markdown-img-paste-20190415003448147.png">
 
-$s_{task}$는 softmax-normalized 가중치이고, $r_{task}$는 전체 ELMo 벡터의 스케일을 조절하는 파라미터이다.
+$s_{task}$는 softmax-normalized 가중치이고, $r_{task}$는 전체 ELMo 벡터의 스케일을 조절하는 파라미터이다. $r$은 최적화 프로세스에서 중요한 역할을 한다.
+
+biLM에서 각각의 레이어들의 활성화 값들은 다른 분포를 가지고 있다고 간주하기 때문에, 어쩔 때는, 레이어 노멀라이제이션(layer normalization)을 해주는 것이 도움이 될 때가 있다. (여기서 biLM과 bi-LSTM의 차이점이 나옵니다. bi-LSTM을 2-layer로 구성했을 경우에는 두 개의 레이어가 동시에 학습되지만, biLM의 경우 각각의 레이어가 스택의 형태로 합쳐져 있긴 하지만, 각 레이어가 별개로 학습 및 최적화가 됩니다.)
 
 - **3.3 Using biLMs for supervised NLP tasks**
+
 biLM 모델을 실행시키고, 각 단어의 모든 레이어 표상들을 기록하면 된다. 그리고 이러한 표상들을 선형 함수에 넣으면 된다. 첫번째로 biLM을 제외한 지도 학습 모델의 가장 낮은(첫 번째로 거치게 되는) 레이어를 생각해보자. 대부분이 같은 형태를 띄고 있을 것이며, 그 부분에 우리의 ELMo를 추가해준다.
 
-기본적인 아키텍처에서는 문맥에 독립적인 단어 또는 문자 벡터 $x_{k}$를 미리 학습된 임베딩 벡터에 넣어서 RNN 또는 CNN 모델을 사용해 문맥에 의존적으로 만든다.
+기본적인 아키텍처에서는 문맥에 독립적인 단어 또는 문자 벡터(character-level vector) $x_{k}$를 미리 학습된 임베딩 벡터에 넣어서 RNN 또는 CNN 모델을 사용해 문맥에 의존적으로 만든다.
 
 지도 학습에 ELMo를 추가한다면, 학습한 ELMo 벡터의 가중치를 고정시킨 상태에서 input sequence에 concat 하는 $[x_{k};ELMo_{k}]$의 형태로 만든다. 또는 input sequence가 아닌, hidden states에 concat하는 $[h_{k};ELMo_{k}]$의 형태도 성능 개선에 효과가 있었음을 확인했다.
 
@@ -58,8 +61,7 @@ biLM 모델을 실행시키고, 각 단어의 모든 레이어 표상들을 기�
 
 전체적인 모델의 input을 character-based input으로 유지하면서, perplexity를 모델의 사이즈와 연산 비용을 함께 고려하여 CNN-BIG-LSTM 모델을 사용한다.(CharCNN + 2-layer-LSTM + projection layer) (Jozefowicz (2016))
 
-최종적인 모델은 레이어가 2이고 $L = 2$ LSTM의 레이어 사이에 [4092,512]의 projection layer를 사용하며,(4092*4092의 연산을 가운데에 [4092,512]의 projection layer를 넣어서 4092*512*2 로 파라미터의 갯수를 줄여주게 됩니다.)
-character based CNN에서는 2048개의 필터를 사용하고, projection 으로 (fully connected layer를 의미하는 것으로 해석됩니다.) 차원을 512로 줄여준다.
+최종적인 모델은 레이어가 2이고 $L = 2$ LSTM의 레이어 사이에 [4092,512]의 projection layer를 사용하며,(4092*4092의 연산을 가운데에 [4092,512]의 projection layer를 넣어서 4092*512*2 로 파라미터의 갯수를 줄여주게 됩니다.) [character based CNN](https://hskimim.github.io/Character-Aware-Neural-Language-Models/)에서는 2개의 highway layer와 2048개의 필터를 사용하고, projection 으로 (fully connected layer를 의미하는 것으로 해석됩니다.) 차원을 512로 줄여준다.
 
 이에 따라, 기존의 임베딩 모델의 층은 고정된 어휘 토큰들에 대해서 오직 하나의 층을 가지는 것에 반해 우리의 모델은 총 3개의 레이어가 된다.(char-based CNN + biLMs)
 

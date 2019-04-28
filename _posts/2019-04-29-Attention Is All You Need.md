@@ -7,7 +7,7 @@ tags: [NLP,HS]
 
 Transformer에 대한 논문, Attention is all you need [논문](https://arxiv.org/abs/1706.03762)에 대해 이야기해보겠습니다.
 
-구현 코드는 최대한 빠른 시일 내에 업데이트하겠습니다!
+구현 코드는 [깃헙](https://github.com/hskimim/Natural_language_Processing_self_study/tree/master/Self-Attention_for_Machine_Translation) 사이트를 참고해주시면 감사하겠습니다.
 
 ## Abstract
 

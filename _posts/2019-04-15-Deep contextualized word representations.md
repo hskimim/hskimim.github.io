@@ -7,8 +7,7 @@ tags: [NLP,HS]
 
 word2vec, Glove, Fasttext에 이어 단어 임베딩의 새로운 방법론을 제시한 ELMO의 탄생작, "Deep contextualized word representations" [논문](https://arxiv.org/pdf/1802.05365.pdf)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.
 
-구현 코드 업로드는 최대한 빨리 진행하도록 하겠습니다!
-
+구현 코드는 [깃헙](https://github.com/hskimim/Natural_language_Processing_self_study/tree/master/ELMO) 사이트를 참고해주시면 감사하겠습니다.
 ## Abstract
 
 해당 논문에서 우리는 단어의 복잡한 특성(문법과 의미론적)과 문맥에 따라 언어적 의미가 달라지는 것을 사용한 새로운 타입의 모델인 "깊은 문맥화된 단어 표상법"을 소개한다. 우리의 단어 벡터는 많은 양의 텍스트 데이터가 깊은 양방향 언어 모델(biLM)으로 부터 학습됨으로써 나온다. 또한, 이렇게 학습된 단어 벡터가 기존의 모델에 쉽게 접목되고 SOTA 의 성능을 보임을 증명한다.

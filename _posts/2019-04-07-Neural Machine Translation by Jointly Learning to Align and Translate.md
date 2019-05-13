@@ -1,8 +1,8 @@
 ---
 title: "Neural Machine Translation by Jointly Learning to Align and Translate"
 date: 2019-04-06 08:26:28 -0400
-categories: [NLP]
-tags: [NLP,HS]
+categories: [NLP_paper]
+tags: [NLP_paper,HS]
 ---
 
 Dzmitry Bahdanau와 조경현 교수님이 함께하신 논문 Neural Machine Translation by Jointly Learning to Align and Translate [논문](https://arxiv.org/abs/1409.0473)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.

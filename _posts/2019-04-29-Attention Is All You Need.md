@@ -1,8 +1,8 @@
 ---
 title: "Attention Is All You Need"
 date: 2019-04-29 08:26:28 -0400
-categories: [NLP]
-tags: [NLP,HS]
+categories: [NLP_paper]
+tags: [NLP_paper,HS]
 ---
 
 Transformer에 대한 논문, Attention is all you need [논문](https://arxiv.org/abs/1706.03762)에 대해 이야기해보겠습니다.

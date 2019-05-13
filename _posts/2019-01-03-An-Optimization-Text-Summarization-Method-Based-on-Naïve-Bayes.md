@@ -1,8 +1,8 @@
 ---
 title: "An Optimization Text Summarization Method Based on Naïve Bayes and Topic Word for Single Syllable Language "
 date: 2019-01-03 08:26:28 -0400
-categories: [Machine_Learning,Paper_summarization]
-tags: [Machine_Learning,Paper_summarization,HS]
+categories: [Machine_Learning]
+tags: [Machine_Learning,HS]
 ---
 
 ## An Optimization Text Summarization Method Based on Naïve Bayes and Topic Word for Single Syllable Language

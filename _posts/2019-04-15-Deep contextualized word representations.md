@@ -1,8 +1,8 @@
 ---
 title: "Deep contextualized word representations"
 date: 2019-04-15 08:26:28 -0400
-categories: [NLP]
-tags: [NLP,HS]
+categories: [NLP_paper]
+tags: [NLP_paper,HS]
 ---
 
 word2vec, Glove, Fasttext에 이어 단어 임베딩의 새로운 방법론을 제시한 ELMO의 탄생작, "Deep contextualized word representations" [논문](https://arxiv.org/pdf/1802.05365.pdf)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.

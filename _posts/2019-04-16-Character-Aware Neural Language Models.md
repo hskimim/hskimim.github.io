@@ -1,8 +1,8 @@
 ---
 title: "Character-Aware Neural Language Models"
 date: 2019-04-16 08:26:28 -0400
-categories: [NLP]
-tags: [NLP,HS]
+categories: [NLP_paper]
+tags: [NLP_paper,HS]
 ---
 
 Convolutional Neural Network for sentence classification 에 이은 Yoon Kim 님의 2015년도 논문, "Character-Aware Neural Language Models" [논문](https://arxiv.org/pdf/1508.06615.pdf)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.

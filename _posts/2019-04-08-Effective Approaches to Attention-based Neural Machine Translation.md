@@ -1,8 +1,8 @@
 ---
 title: "Effective Approaches to Attention-based Neural Machine Translation"
 date: 2019-04-08 08:26:28 -0400
-categories: [NLP]
-tags: [NLP,HS]
+categories: [NLP_paper]
+tags: [NLP_paper,HS]
 ---
 
 Attention 논문에 이어서, 어탠션 메커니즘을 효율적으로 활용하는  구글에서 나온 논문 Neural Machine Effective Approaches to Attention-based Neural Machine Translation [논문](https://arxiv.org/abs/1508.04025)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.

@@ -1,8 +1,8 @@
 ---
 title: "Sequence to Sequence Learning with Neural Networks"
 date: 2019-04-06 08:26:28 -0400
-categories: [NLP]
-tags: [NLP,HS]
+categories: [NLP_paper]
+tags: [NLP_paper,HS]
 ---
 
 조경현 교수님의 RNN Seq2Seq 논문에 이어 구글에서 나온 논문 Sequence to Sequence Learning with Neural Networks [논문](https://arxiv.org/abs/1409.3215)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.

@@ -1,8 +1,8 @@
 ---
 title: "Convolutional Neural Networks for Sentence Classification"
 date: 2019-04-04 08:26:28 -0400
-categories: [NLP]
-tags: [NLP,HS]
+categories: [NLP_paper]
+tags: [NLP_paper,HS]
 ---
 
 김윤 교수님이 쓰신 Convolutional Neural Networks for Sentence Classification [논문](https://www.aclweb.org/anthology/D14-1181.pdf)에 대해 다뤄보도록 하겠습니다. 모든 내용과 이미지는 해당 논문을 참고합니다.

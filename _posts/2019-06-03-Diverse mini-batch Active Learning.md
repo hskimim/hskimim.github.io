@@ -1,14 +1,14 @@
 ---
 title: "Diverse mini-batch Active Learning"
 date: 2019-06-03 08:26:28 -0400
-categories: [Active Learning]
-tags: [Active Learning,HS]
+categories: [Deep_Learning]
+tags: [Deep_Learning,HS]
 ---
 
 기존의 Active Learning은 라벨이 없는 데이터에서 개별 인스턴스의 정보량을 파악해, 이에 따른 개별 인스턴스를 쿼리하는 방식이였
 습니다. 해당 방법론은 적은 라벨 데이터로도 지도 학습의 성능까지 충분히 끌어올릴 수 있다는 점에서 각광받았지만, 현실적으로 개별 데이터에 대한 라벨을 사람이 주석을 하나씩 단다는 것은 시간적으로 매우 비효율적이라는 점에서 문제가 있었죠. 이에 따라서, 배치 방식으로 쿼리를 보내는 방법론인 batch-mode active learning 이 제안이 되었습니다. batch-mode active learning 의 방법론 중 2019년에 나온 Amazon Research 의 논문 ["Diverse mini-batch Active Learning"](https://arxiv.org/pdf/1901.05954.pdf) 에 대해 요약 정리해보려 합니다. 방법론이 타 논문에 비해, 비교적 간단하고 직관적이라 읽어보시면 매우 유익할 것이라 생각이 듭니다!!
 
-구현 코드는 아직 부족한 점이 많지만, [깃헙](https://github.com/hskimim/active-learning-tutorial/tree/master/Diverse_minibatch_Active_Learning)을 참고하시면 이해에 도움이 되실 것 같습니다! 
+구현 코드는 아직 부족한 점이 많지만, [깃헙](https://github.com/hskimim/active-learning-tutorial/tree/master/Diverse_minibatch_Active_Learning)을 참고하시면 이해에 도움이 되실 것 같습니다!
 __________________________________
 
 Batch-mode Active Learning 을 어떻게 해볼까 생각을 해보면, 매우 나이브하게는 아래와 같을 수 있습니다.

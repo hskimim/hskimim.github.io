@@ -1,8 +1,8 @@
 ---
 title: "Learning Loss for Active Learning"
 date: 2019-06-03 08:26:28 -0400
-categories: [Active Learning]
-tags: [Active Learning,HS]
+categories: [Deep_Learning]
+tags: [Deep_Learning,HS]
 ---
 
 Active Learning 을 딥러닝에 적용하는 효과적인 방법론에 대해 다루고 있는데요. 이번에는 2019년에 KAIST 에서 나온 논문 ["Learning Loss for Active Learning"](https://arxiv.org/pdf/1905.03677.pdf) 에 대해 이야기해보려 합니다.

@@ -1,8 +1,8 @@
 ---
 title: "Active Learning Literature Survey"
 date: 2019-05-30 08:26:28 -0400
-categories: [Active Learning]
-tags: [Active Learning,HS]
+categories: [Deep_Learning]
+tags: [Deep_Learning,HS]
 ---
 
 Active Learning을 위해서 한 번은 거치고 가야할 논문, Burr Settles 교수가 쓴 2010 년의 Survey ["Active Learning Literature Survey"](http://burrsettles.com/pub/settles.activelearning.pdf) 에 대해 이야기해보도록 하겠습니다. 본 포스팅에서 나오는 캡쳐 이미지는 모두 해당 논문에 기인한 것입니다.

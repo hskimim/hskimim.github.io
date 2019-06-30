@@ -32,7 +32,8 @@ predefined curriculum 방식은 아래 식의 $G$ 의 형태를 이미하는 상
 $$argmin_{\theta} \sum_{(x_{i},y_{i}) \in \mathbb(D)} g_{m} (z_{i};\theta)l_{i} + G(g_{m}(z_{i};\theta);\lambda)$$
 
 해당 논문에서 사용한 함수는 이전 포스팅 [SPCL](https://hskimim.github.io/Self-Paced-Curriculum-Learning/) 의 마지막 부분에 나왔던 Mixture scheme function 과 일치하는 부분입니다.
-$$G(v;\lambda) = \sum_{i=1}^{n} \ \frac{1}{2}\lambda_{2}v_{i}^2 - (\lambda_{1} + \lambda_{2})v_{i}$$$$g_m(z_{i},\theta) = \\ \mathbb{I}(l_{i},\lambda_{1}) \ \  \text{if} \ \ \lambda_{2} = 0 \\ min(max(0,1-\frac{l_{i}-\lambda_{1}}{\lambda_{2}}),1) \ \  \text{if} \ \ \lambda_{2} \ne 0$$
+$$G(v;\lambda) = \sum_{i=1}^{n} \ \frac{1}{2}\lambda_{2}v_{i}^2 - (\lambda_{1} + \lambda_{2})v_{i}$$
+$$g_m(z_{i},\theta) = \\ \mathbb{I}(l_{i},\lambda_{1}) \ \  \text{if} \ \ \lambda_{2} = 0 \\ min(max(0,1-\frac{l_{i}-\lambda_{1}}{\lambda_{2}}),1) \ \  \text{if} \ \ \lambda_{2} \ne 0$$
 
 $\lambda_{1},\lambda_{2}$ 은 하이퍼 파라미터입니다. 모델의 손실 함수에 따라서 $l_{i}$ 이 도출되며, 이에 따라, predetermined curriculum function 이 $\hat{v_{i}}$ 를 반환합니다. 해당 방법론에서 MentorNet 은 지도학습의 형태로 $\hat{v_{i}}$ 을 라벨로 이를 학습하게 됩니다.
 

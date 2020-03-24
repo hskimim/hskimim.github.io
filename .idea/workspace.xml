@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95f446b9-d19a-4347-a190-bef575ca348c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2020-03-23-File_system&amp;DB.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/2020-03-25-EBS_EFS_S3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/assets/ebs_efs_s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/post_img/aws_terminal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/post_img/ebs_efs_s3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/스크린샷 2019-09-07 오전 2.33.03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/스크린샷 2019-09-07 오전 2.33.03_hxxt8j3oe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/스크린샷 2019-09-07 오전 2.34.27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/post_img/스크린샷 2019-09-07 오전 2.33.03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/post_img/스크린샷 2019-09-07 오전 2.33.03_hxxt8j3oe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/post_img/스크린샷 2019-09-07 오전 2.34.27.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +18,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZWgYjwV4DefGXrsw3h6piHfUg5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -32,6 +33,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/post_img" />
+      <recent name="$PROJECT_DIR$/_posts/assets" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,8 +63,17 @@
       <option name="presentableId" value="Default" />
       <updated>1563720386835</updated>
       <workItem from="1563720388049" duration="32000" />
-      <workItem from="1584960315676" duration="2636000" />
+      <workItem from="1584960315676" duration="3070000" />
+      <workItem from="1585065067389" duration="2319000" />
     </task>
+    <task id="LOCAL-00001" summary="db vs fs">
+      <created>1584963141116</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584963141116</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,10 +84,17 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="db vs fs" />
+    <option name="LAST_COMMIT_MESSAGE" value="db vs fs" />
   </component>
 </project>

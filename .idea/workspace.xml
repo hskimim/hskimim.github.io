@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="95f446b9-d19a-4347-a190-bef575ca348c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-03-25-EBS_EFS_S3.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-03-25-EBS_EFS_S3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-04-05-AWS_setting(1).md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-04-05-AWS_setting(1).md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,10 @@
       <workItem from="1563720388049" duration="32000" />
       <workItem from="1584960315676" duration="3070000" />
       <workItem from="1585065067389" duration="2354000" />
-      <workItem from="1585067818104" duration="1701000" />
+      <workItem from="1585067818104" duration="3805000" />
+      <workItem from="1585737876862" duration="21000" />
+      <workItem from="1586021088468" duration="1526000" />
+      <workItem from="1586022939866" duration="58000" />
     </task>
     <task id="LOCAL-00001" summary="db vs fs">
       <created>1584963141116</created>
@@ -78,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585067458915</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ebs efs s3">
+      <created>1585070068058</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585070068058</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

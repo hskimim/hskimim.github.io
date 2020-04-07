@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95f446b9-d19a-4347-a190-bef575ca348c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_posts/2020-04-07-spark_알아보자.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/post_img/spark1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/post_img/spark2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-04-05-AWS_setting(1).md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-04-05-AWS_setting(1).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-03-25-EBS_EFS_S3.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-03-25-EBS_EFS_S3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/post_img/aws_terminal.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +69,8 @@
       <workItem from="1585067818104" duration="3805000" />
       <workItem from="1585737876862" duration="21000" />
       <workItem from="1586021088468" duration="1526000" />
-      <workItem from="1586022939866" duration="58000" />
+      <workItem from="1586022939866" duration="77000" />
+      <workItem from="1586276412452" duration="4420000" />
     </task>
     <task id="LOCAL-00001" summary="db vs fs">
       <created>1584963141116</created>

@@ -37,7 +37,7 @@ def attention(q, k, v):
 ## Figures
 
 <figure>
-  <img src="/images/specimen-figure.svg" alt="A sample line chart" />
+  <img src="/images/specimen-figure.svg" alt="A sample line chart" width="400" height="200" />
   <figcaption>Fig. 1. Figures carry numbered captions in muted text.</figcaption>
 </figure>
 

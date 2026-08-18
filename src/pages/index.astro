@@ -1,7 +1,8 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE_TITLE } from '../consts';
 ---
-<html lang="en">
-  <head><meta charset="utf-8" /><title>{SITE_TITLE}</title></head>
-  <body><h1>{SITE_TITLE}</h1></body>
-</html>
+
+<BaseLayout title={SITE_TITLE}>
+  <p class="intro">Post list coming in Task 4.</p>
+</BaseLayout>
